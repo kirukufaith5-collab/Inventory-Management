@@ -22,7 +22,7 @@ Endpoints:
 pip install flask-cors
 ```
 ```python
-# add near the top of app.py
+# add near the top of app.py to enable communicaton between flask and React 
 from flask_cors import CORS
 CORS(app)
 ```
