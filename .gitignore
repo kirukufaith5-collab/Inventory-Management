@@ -1,0 +1,69 @@
+# ==========================================
+# Python / Flask Environment
+# ==========================================
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+pyenv/
+
+# Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+instance/
+
+# ==========================================
+# Node / React Environment
+# ==========================================
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+eslintcache
+
+# ==========================================
+# Security & Environment Variables (CRITICAL)
+# ==========================================
+# Never commit your private API keys or secrets!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ==========================================
+# Operating System / IDE Files
+# ==========================================
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
