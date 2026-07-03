@@ -1,9 +1,6 @@
 const API_BASE = "http://127.0.0.1:5000";
 
-// Safely parse a response as JSON. If the server returned something
-// that isn't JSON (an HTML error page from a 404/500, a proxy error,
-// etc.) this throws a readable message instead of letting
-// `SyntaxError: Unexpected token '<' ...` reach the UI.
+
 async function parseJson(res) {
   const contentType = res.headers.get("content-type") || "";
   if (!contentType.includes("application/json")) {
