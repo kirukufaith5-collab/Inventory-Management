@@ -1,4 +1,5 @@
 import React from "react";
+
 export default function InventoryTable({
   items,
   loading,
@@ -59,4 +60,3 @@ export default function InventoryTable({
     </section>
   );
 }
-
