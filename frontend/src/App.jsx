@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
-import ItemForm from "./components/ItemForm";
-import LookupPanel from "./components/LookupPanel";
-import InventoryTable from "./components/InventoryTable";
-import ErrorBanner from "./components/ErrorBanner";
-import { fetchInventory, createItem, updateItem, deleteItem, lookupProduct } from "./api";
+import ItemForm from "./components/ItemForm.jsx";
+import LookupPanel from "./components/LookupPanel.jsx";
+import InventoryTable from "./components/InventoryTable.jsx";
+import ErrorBanner from "./components/ErrorBanner.jsx";
+import { fetchInventory, createItem, updateItem, deleteItem, lookupProduct } from "./api.js";
 
 const emptyForm = { name: "", barcode: "", quantity: "", price: "", category: "" };
 
@@ -119,11 +119,9 @@ export default function App() {
   return (
     <div className="page">
       <header className="header">
-        <h1>Inventory Admin</h1>
+        <h1>Inventory Management System</h1>
         <p>Manage stock, prices, and categories</p>
       </header>
-
-      <ErrorBanner message={error} />
 
       <section className="grid">
         <ItemForm
